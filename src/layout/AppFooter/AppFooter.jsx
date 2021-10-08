@@ -1,17 +1,26 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { format } from 'date-fns';
+
+const cn = require('classnames');
 
 import styles from './AppFooter.module.css';
 
-export const AppFooter = () => {
+export const AppFooter = ({ className }) => {
     return (
-        <footer className={styles.footer}>
-            <div>
-                <a href="#">Support</a>
-                <a href="#">Learning</a>
-                <a href="#">Русская версия</a>
+        <footer className={cn(styles.footer, className)}>
+          <div className={styles.wrapper}>
+            <div className={styles.links}>
+              <a href="#">Support</a>
+              <a href="#">Learning</a>
+              <a href="#">Русская версия</a>
             </div>
-            <p>© {format(new Date(), 'yyyy')} Muravyev Vitaly</p>
+            <span className={styles.copyright}>© {format(new Date(), 'yyyy')} Muravyev Vitaly</span>
+          </div>
         </footer>
     )
+}
+
+AppFooter.propTypes = {
+  className: PropTypes.string,
 }

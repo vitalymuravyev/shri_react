@@ -1,0 +1,130 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 25px 12px 56px;
+
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.06px;
+
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px rgba(67, 68, 69, 0.3), 0px 1px 1px rgba(67, 68, 69, 0.3);
+    cursor: pointer;
+}
+
+.wrapper:hover  {
+    box-shadow: 0px 0px 1px rgba(67, 68, 69, 0.3), 0px 2px 8px rgba(67, 68, 69, 0.3);
+}
+
+.mainInfo {
+    position: relative;
+}
+
+.iconWrapper {
+    position: absolute;
+    left: -30px;
+}
+
+.titleData {
+    display: flex;
+
+    margin-bottom: 8px;
+}
+
+.number {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #00B341;
+}
+
+.title {
+    margin-left: 4px;
+
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.repositoryInfo {
+    display: flex;
+}
+
+.repositoryInfo img {
+    opacity: 0.65;
+    margin-right: 4px;
+}
+
+.commit {
+    opacity: 0.65;
+    margin-left: 4px;
+    margin-right: 10px;
+}
+
+.runData {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.65;
+}
+
+.runData img {
+    margin-right: 4px;
+}
+
+.time {
+    margin-top: 12px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media (max-width: 576px) {
+    .wrapper {
+        flex-direction: column;
+        padding: 16px 12px 16px 36px;
+    }
+    .mainInfo {
+        border-bottom: 1px solid #F0F2F3;
+    }
+    .titleData {
+        flex-direction: column;
+    }
+
+    .iconWrapper {
+        left: -20px;
+    }
+
+    .iconWrapper img {
+        width: 15px;
+    }
+    .number {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .title {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+    .repositoryInfo {
+        flex-direction: column;
+    }
+
+    .user {
+        margin: 8px 0;
+    }
+
+    .runData {
+        flex-direction: row;
+        margin-top: 8px;
+    }
+
+    .time {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,35 @@
+.icon {
+    margin-right: 6px;
+}
+.button {
+    display: flex;
+    align-items: center;
+
+    font-size: 13px;
+    line-height: 36px;
+    border-radius: 4px;
+    font-family: inherit;
+    padding: 0 20px;
+    background-color: #FFCC00;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.button:hover {
+   background-color: #F2C200;
+}
+
+.secondary {
+    background-color: #E6E6E6;
+}
+
+.secondary:hover {
+    background-color: #DBDBDB;
+}
+
+.small {
+    line-height: 28px;
+    padding: 0 10px;
+}

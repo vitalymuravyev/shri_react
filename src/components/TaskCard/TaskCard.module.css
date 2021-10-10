@@ -10,6 +10,8 @@
     border-radius: 6px;
     box-shadow: 0px 0px 1px rgba(67, 68, 69, 0.3), 0px 1px 1px rgba(67, 68, 69, 0.3);
     cursor: pointer;
+
+    margin-top: 8px;
 }
 
 .wrapper:hover  {
@@ -35,7 +37,16 @@
     font-size: 18px;
     line-height: 20px;
     font-weight: 500;
+}
+
+.done {
     color: #00B341;
+}
+.failed {
+    color: #FF3333;
+}
+.wait {
+    color: #FF9A00;
 }
 
 .title {

@@ -1,9 +1,19 @@
 .wrapper {
-    margin-top: 20px;
-
     font-size: 13px;
     line-height: 18px;
     max-width: 475px;
+}
+
+.small {
+    max-width: 50px;
+    display: inline-block;
+
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.small input {
+    padding: 9px 7px;
 }
 
 .label {

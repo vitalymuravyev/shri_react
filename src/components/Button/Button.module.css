@@ -2,7 +2,6 @@
     margin-right: 6px;
 }
 .button {
-    display: flex;
     align-items: center;
 
     font-size: 13px;
@@ -15,6 +14,10 @@
     border: none;
 
     cursor: pointer;
+}
+
+.button .icon {
+    display: flex;
 }
 
 .button:hover {

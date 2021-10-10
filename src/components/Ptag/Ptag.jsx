@@ -1,19 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// const cn = require('classnames');
+const cn = require('classnames');
 
 import styles from './Ptag.module.css';
 
-export const Ptag = ({ children }) => {
+export const Ptag = ({ children, className, ...props }) => {
   return (
-    <p className={styles.custom}>
-      {children}
+    <p className={cn(styles.main, className,)}
+      {...props}
+    >
+      { children }
     </p>
   )
 }
 
 Ptag.propTypes = {
   className: PropTypes.string,
-  children: PropTypes.element
+  children: PropTypes.string
 }

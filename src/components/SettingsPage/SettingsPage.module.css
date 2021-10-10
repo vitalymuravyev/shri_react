@@ -1,0 +1,32 @@
+.heading {
+    margin-top: 8px;
+}
+
+.text {
+    margin-top: 8px;
+}
+
+.form {
+    margin-top: 22px;
+}
+
+.formField {
+    margin-top: 20px;
+}
+
+.time {
+    margin-top: 20px;
+}
+
+.buttonsGroup {
+    display: flex;
+    gap: 8px;
+
+    margin-top: 24px;
+}
+
+@media (max-width: 576px) {
+    .buttonsGroup {
+        flex-direction: column;
+    }
+}

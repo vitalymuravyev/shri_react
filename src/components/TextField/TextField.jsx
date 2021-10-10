@@ -5,10 +5,12 @@ import styles from './TextField.module.css';
 
 const cn = require('classnames');
 
-export const TextField = ({ className, id, label, icon = true, ...atrs}) => {
+export const TextField = ({ className, id, label, icon = false, small = false, ...atrs}) => {
   const { required } = atrs;
 return (
-  <div className={styles.wrapper}>
+  <div className={cn(styles.wrapper, {
+    [styles.small]: small === true
+  })}>
     {label && <label className={cn(styles.label, className)} htmlFor={id}>
       {label}{required ? <sup>*</sup> : ''}
     </label>}
@@ -34,4 +36,5 @@ TextField.propTypes = {
   id: PropTypes.string.isRequired,
   label: PropTypes.string,
   icon: PropTypes.bool,
+  small: PropTypes.bool,
 }
